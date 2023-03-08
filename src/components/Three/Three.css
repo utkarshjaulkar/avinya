@@ -1,0 +1,44 @@
+.three-flex {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+.three-title {
+  width: 30%;
+  background-color: #030203;
+  margin-top: 80px;
+  border: none;
+  height: 400px;
+}
+.three-title p {
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  text-align: center;
+  font-family: "Fredoka One";
+  font-size: 39px;
+  background: linear-gradient(to right, rgb(52, 140, 191), rgb(176, 49, 230));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.three-main {
+  height: 578px;
+  width: 70%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .three-flex {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+  .three-title {
+    width: 100%;
+  }
+  .three-main {
+    width: 100%;
+  }
+}

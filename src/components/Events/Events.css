@@ -1,0 +1,190 @@
+.event-main {
+  height: 1250px;
+  margin-top: 0px;
+  background-color: #000000;
+  background-image: linear-gradient(
+    180deg,
+    #000000 0%,
+    #993265 50%,
+    #551659 100%
+  );
+}
+
+.event-title p {
+  font-size: 45px;
+  font-family: "Fredoka One";
+  background: -webkit-linear-gradient(#f8f8f8, #10b4c6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin: 0px;
+  padding-top: 50px;
+  font-weight: 700;
+}
+
+.event-flex1,
+.event-flex2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 40px;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.stage1 {
+  background-color: aliceblue;
+  height: 350px;
+  width: 350px;
+  text-align: center;
+  border-radius: 40px;
+  background: #2b5876; /* fallback for old browsers */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.stage1 p,
+.stage2 p,
+.stage3 p,
+.stage4 p {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.stage2 {
+  background-color: aliceblue;
+  height: 350px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  background: #9796f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.stage3 {
+  background-color: aliceblue;
+  height: 350px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  background: #c6ffdd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f7797d,
+    #fbd786,
+    #c6ffdd
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f7797d,
+    #fbd786,
+    #c6ffdd
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.stage4 {
+  background-color: aliceblue;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  background: #2196f3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #190b22,
+    #2196f3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #120b0a,
+    #174e7b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 350px;
+  width: 350px;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.stage1 img,
+.stage2 img,
+.stage3 img,
+.stage4 img {
+  height: 200px;
+  width: 200px;
+}
+
+.modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #003973 0%,
+    #e5e5be 51%,
+    #003973 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #0f0b0b;
+  border-radius: 10px;
+  display: block;
+  border: transparent;
+  cursor: pointer;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 875px) {
+  .event-main {
+    height: auto;
+  }
+
+  .event-flex1,
+  .event-flex2 {
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 80px;
+  }
+  .event-flex2 {
+    margin-top: 0px;
+  }
+
+  .stage1,
+  .stage2,
+  .stage3,
+  .stage4 {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+}
