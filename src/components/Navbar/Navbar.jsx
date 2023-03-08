@@ -22,6 +22,12 @@ class Navbar extends Component {
           ></i>
         </div>
         <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+          <Link className="nav-links" to="/">
+            <li>
+              <i className="fa-solid fa-home"></i>
+              Home
+            </li>
+          </Link>
           <Link className="nav-links" to="/register">
             <li>
               <i className="fa-solid fa-user"></i>

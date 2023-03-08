@@ -21,12 +21,36 @@ const Register = () => {
                   <div class="input_field">
                     {' '}
                     <span>
+                      <i aria-hidden="true" class="fa fa-user-group"></i>
+                    </span>
+                    <input
+                      type="name"
+                      name="Group Name"
+                      placeholder="Group Name"
+                      required
+                    />
+                  </div>
+                  <div class="input_field">
+                    {' '}
+                    <span>
                       <i aria-hidden="true" class="fa fa-user"></i>
                     </span>
                     <input
                       type="name"
-                      name="Name"
-                      placeholder="Name"
+                      name="Member 1 Name"
+                      placeholder="Member 1 Name"
+                      required
+                    />
+                  </div>
+                  <div class="input_field">
+                    {' '}
+                    <span>
+                      <i aria-hidden="true" class="fa fa-user"></i>
+                    </span>
+                    <input
+                      type="name"
+                      name="Member 2 Name"
+                      placeholder="Member 2 Name"
                       required
                     />
                   </div>
