@@ -62,8 +62,8 @@ const Modal = ({ handleClose, text }) => {
                 You can choose the language of your choice to debug (C, C++,
                 python, java){' '}
               </li>
-              <li>o Second round will be of 1:30 hour</li>
-              <li>o Points will be given on the basis of errors resolved</li>
+              <li>Second round will be of 1:30 hour</li>
+              <li>Points will be given on the basis of errors resolved</li>
               <li>
                 Type of error resolved and time taken to debug both will be
                 considered while evaluation{' '}
@@ -80,14 +80,14 @@ const Modal = ({ handleClose, text }) => {
           <li className="round">
             Round 3: DesignZillas
             <ul className="round-rules">
-              <li>o Round 2 will be commencing at 3:00 pm.</li>
-              <li>o This round will last for 3:00 hours</li>
+              <li>Round 2 will be commencing at 3:00 pm.</li>
+              <li>This round will last for 3:00 hours</li>
               <li>
                 In this round participant will have to design a prototype only
                 (No coding)
               </li>
               <li>
-                o Participants can choose the platform according to their
+                Participants can choose the platform according to their
                 convenience{' '}
               </li>
               <li>

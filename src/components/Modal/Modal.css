@@ -83,8 +83,9 @@
 
 @media screen and (max-width: 850px) {
   .backdrop {
-    margin-top: 1200px;
+    margin-top: 2200px;
     height: 1800px;
+    z-index: 95;
   }
   /* .modal {
     margin-left: 10px;

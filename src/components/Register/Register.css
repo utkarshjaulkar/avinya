@@ -51,7 +51,7 @@ label {
   font-size: 12px;
 }
 .row {
-  margin: 10px -15px;
+  /* margin: 10px -15px; */
 }
 .row div {
   padding: 0 15px;
