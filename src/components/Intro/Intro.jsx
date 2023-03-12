@@ -13,10 +13,11 @@ const Intro = () => {
         <div className="intro-info">
           <h1>What is Avinya ?</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque,
-            dolorem quasi? Porro consequatur culpa nobis beatae praesentium,
-            quaerat, accusantium labore qui cum ratione architecto omnis? Dicta
-            alias incidunt blanditiis doloribus.
+            Avinya is a two-day technical event sponsored by Innovision that was
+            initiated by the department of computer engineering. This includes a
+            coding competition, hands-on workshops in different fields, and
+            expert sessions. Throughout these two days, various areas of the
+            computer industry will be highlighted.
           </p>
           <Link to="/register">
             <button className="reg-button"> Register</button>
