@@ -3,7 +3,7 @@ import Navbar from '../Navbar/Navbar'
 import { NavLink } from 'react-router-dom'
 import './Register.css'
 
-const Register = () => {
+const SessionRegister = () => {
   return (
     <>
       <Navbar />
@@ -14,9 +14,9 @@ const Register = () => {
         </div>
         <div className="register-links">
           <div className="register-option">
-            <p>To register for guest lecture</p>
-            <NavLink to="/registerS" style={{ textDecoration: 'none' }}>
-              <button className="s-register">Click here</button>
+            <p>To register for Contest</p>
+            <NavLink to="/registerE" style={{ textDecoration: 'none' }}>
+              <button className="e-register">Click here</button>
             </NavLink>
           </div>
         </div>
@@ -25,50 +25,27 @@ const Register = () => {
         <div class="form_wrapper">
           <div class="form_container">
             <div class="title_container">
-              <h2>Event Registration Form</h2>
+              <h2> Session Registration Form</h2>
             </div>
             <div class="row clearfix">
               <div class="">
                 <form
                   method="POST"
-                  action="https://script.google.com/macros/s/AKfycbxOyORcBBbh7sQmcdr7bNW9VnDbyqDHH9hKClaMvTTGDJ44S3Ffu3O6LCNaCeMa-4uWqw/exec"
+                  action="https://script.google.com/macros/s/AKfycbzz5IrJC9TxMVGIOKCY4la8_ZU1EYKA98kuqcnX7UPcBQU6yud7KxSEXZLi7QouFweQ9A/exec"
                 >
                   <div class="input_field">
                     {' '}
                     <span>
-                      <i aria-hidden="true" class="fa fa-user-group"></i>
-                    </span>
-                    <input
-                      type="name"
-                      name="Group Name"
-                      placeholder="Group Name"
-                      required
-                    />
-                  </div>
-                  <div class="input_field">
-                    {' '}
-                    <span>
                       <i aria-hidden="true" class="fa fa-user"></i>
                     </span>
                     <input
                       type="name"
-                      name="Member 1 Name"
-                      placeholder="Member 1 Name"
+                      name="Name"
+                      placeholder="Name"
                       required
                     />
                   </div>
-                  <div class="input_field">
-                    {' '}
-                    <span>
-                      <i aria-hidden="true" class="fa fa-user"></i>
-                    </span>
-                    <input
-                      type="name"
-                      name="Member 2 Name"
-                      placeholder="Member 2 Name"
-                      required
-                    />
-                  </div>
+
                   <div class="input_field">
                     {' '}
                     <span>
@@ -107,7 +84,6 @@ const Register = () => {
                       maxlength="10"
                     />
                   </div>
-
                   <div class="input_field">
                     {' '}
                     <span>
@@ -136,4 +112,4 @@ const Register = () => {
   )
 }
 
-export default Register
+export default SessionRegister

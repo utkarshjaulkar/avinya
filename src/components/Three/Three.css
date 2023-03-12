@@ -14,8 +14,9 @@
 .three-title p {
   color: rgb(255, 255, 255);
   font-size: larger;
+  font-weight: 700;
   text-align: center;
-  font-family: "Fredoka One";
+  font-family: "Merriweather Sans";
   font-size: 39px;
   background: linear-gradient(to right, rgb(52, 140, 191), rgb(176, 49, 230));
   -webkit-text-fill-color: transparent;

@@ -8,8 +8,16 @@ const Three = () => {
     <>
       <div className="three-flex">
         <div className="three-title">
-          <p>Department of Computer Engineering Jspm's RSCOE Brings You</p>
-          <p>AVINYA'23</p>
+          <p>
+            Department of Computer Engineering <span /> <span />
+            <br />
+            Jspm's RSCOE <span />
+            <br />
+            Brings You
+          </p>
+          <p>
+            <img src="./images/logo2.png" />
+          </p>
         </div>
         <div className="three-main">
           <Spline scene="https://prod.spline.design/VwQC3wZYw-04IV7B/scene.splinecode" />

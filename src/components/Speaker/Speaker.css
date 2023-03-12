@@ -9,8 +9,8 @@
   background-color: #d04176;
   background-image: linear-gradient(
     0deg,
-    #d04176 0%,
-    #50b3c8 46%,
+    #9441d0 10%,
+    #be3dba 46%,
     #551659 100%
   );
 }
@@ -18,7 +18,7 @@
 #speaker h1 {
   font-size: 50px;
   margin: 30px;
-  font-family: "Fredoka One";
+  font-family: "Merriweather Sans";
   background: -webkit-linear-gradient(#ffffff, #59e4c6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

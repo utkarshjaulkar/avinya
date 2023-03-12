@@ -19,8 +19,11 @@ const Intro = () => {
             expert sessions. Throughout these two days, various areas of the
             computer industry will be highlighted.
           </p>
-          <Link to="/register">
-            <button className="reg-button"> Register</button>
+          <Link to="/register" style={{ textDecoration: 'none' }}>
+            <button className="reg-button" style={{ textDecoration: 'none' }}>
+              {' '}
+              Register
+            </button>
           </Link>
         </div>
       </div>

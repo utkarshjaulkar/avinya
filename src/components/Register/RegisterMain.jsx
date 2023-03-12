@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
+import { NavLink } from 'react-router-dom'
 import './RegisterMain.css'
 
 const RegisterMain = () => {
@@ -8,18 +9,25 @@ const RegisterMain = () => {
       <Navbar />
       <div className="registration-details">
         <div className="details">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-          culpa? Accusamus debitis itaque nobis fugiat blanditiis veritatis
-          dignissimos. Veritatis enim obcaecati quidem dolor iusto doloremque
-          architecto velit distinctio. Temporibus, dolorem!
+          <h2> Registration fee for Contest:- ₹100/- per group</h2> <br />
+          <h2>Registraion fee for Guest lecture:- ₹50/- per head</h2>
         </div>
-        <div className="register-option">
-          To register for guest lecture
-          <button className="s-register">Click here</button>
-        </div>
-        <div className="register-option">
-          To register for Event
-          <button className="e-register">Click here</button>
+        <div className="register-links">
+          <div className="register-option">
+            <p>
+              To register for Guest Lecture
+              <br /> By Shridhar Mankar (5 minutes Engineering)
+            </p>
+            <NavLink to="/registerS" style={{ textDecoration: 'none' }}>
+              <button className="s-register">Click here</button>
+            </NavLink>
+          </div>
+          <div className="register-option">
+            <p> To register for Contest</p>
+            <NavLink to="/registerE" style={{ textDecoration: 'none' }}>
+              <button className="e-register">Click here</button>
+            </NavLink>
+          </div>
         </div>
       </div>
     </>

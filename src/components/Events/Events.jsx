@@ -72,18 +72,34 @@ const Events = () => {
         </div>
         <div className="event-flex1">
           <div className="stage1">
-            <img src="./images/stage1.png" /> <p> Trial by Trivia</p>{' '}
+            <img src="./images/stage1.png" />{' '}
+            <p>
+              {' '}
+              Trial by Trivia <br /> (Round 1)
+            </p>{' '}
           </div>
           <div className="stage2">
-            <img src="./images/stage2.png" /> <p> Break the Code</p>
+            <img src="./images/stage2.png" />{' '}
+            <p>
+              {' '}
+              Break the Code <br /> (Round 2)
+            </p>
           </div>
         </div>
         <div className="event-flex2">
           <div className="stage3">
-            <img src="./images/stage3.png" /> <p> DesignZillas </p>
+            <img src="./images/stage3.png" />{' '}
+            <p>
+              {' '}
+              ProtoX <br /> (Round 3)
+            </p>
           </div>
           <div className="stage4">
-            <img src="./images/stage4.png" /> <p> Code Combat</p>
+            <img src="./images/stage4.png" />{' '}
+            <p>
+              {' '}
+              Code Combat <br /> (Round 4)
+            </p>
           </div>
         </div>
         <div className="modal-button">

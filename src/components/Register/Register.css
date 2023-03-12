@@ -5,8 +5,19 @@
   visibility: hidden;
   height: 0;
 }
+.payment {
+  height: 250px;
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.payment img {
+  height: 100%;
+  width: 100%;
+}
 .form-space {
-  padding-top: 50px;
+  /* padding-top: 50px; */
+  /* margin-top: 0px; */
 }
 .form_wrapper {
   background: #fff;
@@ -50,9 +61,7 @@ h3 {
 label {
   font-size: 12px;
 }
-.row {
-  /* margin: 10px -15px; */
-}
+
 .row div {
   padding: 0 15px;
   box-sizing: border-box;

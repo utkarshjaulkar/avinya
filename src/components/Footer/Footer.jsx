@@ -17,15 +17,24 @@ const Footer = () => {
                 Rd, Ashok Nagar, Tathawade, Pimpri-Chinchwad, Maharashtra 411033
               </h6>
               <h6>
-                +01 2345 6789 12<span>|</span>+01 2345 6789 12
+                Param Pawar: +91 89560 49304<span>|</span> Pratiksha Patil: +91
+                72188 66759
               </h6>
               <div className="footer-social-icon">
                 <span></span>
-                <a href="#" target="_blank" rel="noreferrer">
+                <a
+                  href="https://instagram.com/avinya_2023?igshid=ZDdkNTZiNTM="
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src="./images/insta.png" alt="" />
                 </a>
 
-                <a href="#" target="_blank" rel="noreferrer">
+                <a
+                  href="https://discord.gg/W9v9bWzE"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src="./images/discord.png" alt="" />
                 </a>
               </div>

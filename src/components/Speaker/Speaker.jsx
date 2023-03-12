@@ -4,7 +4,7 @@ import './Speaker.css'
 const Speaker = () => {
   return (
     <section id="speaker">
-      <h1>Speakers</h1>
+      <h1>Meet Our Speakers</h1>
       <div class="container">
         <div class="box">
           <div class="imgBox">
@@ -14,7 +14,7 @@ const Speaker = () => {
             <h2>
               Shridhar Mankar
               <br />
-              <span>A YouTuber (5 Minute Engineering 400k+ Subscribers)</span>
+              <span>A YouTuber (5 Minute Engineering 440k+ Subscribers)</span>
             </h2>
           </div>
         </div>
