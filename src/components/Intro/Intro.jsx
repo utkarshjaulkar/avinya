@@ -1,6 +1,7 @@
 import React from 'react'
 import Spline from '@splinetool/react-spline'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import './Intro.css'
 
 const Intro = () => {
@@ -12,18 +13,24 @@ const Intro = () => {
         </div>
         <div className="intro-info">
           <h1>What is Avinya ?</h1>
-          <p>
-            Avinya is a two-day technical event sponsored by Innovision that was
-            initiated by the department of computer engineering. This includes a
-            coding competition, hands-on workshops in different fields, and
-            expert sessions. Throughout these two days, various areas of the
-            computer industry will be highlighted.
+          <p className="des">
+            AVINYA ~ derived from the Sanskrit language meaning 'Innovation' is
+            the process of creating new ideas, products, or services that
+            provide value to people and society. <br />
+            <br />
+            We are pleased to present to you a technical event aimed at bringing
+            together experts, practitioners, enthusiasts, and novices in the
+            field of computers to share knowledge, discuss innovations, and
+            network with like-minded individuals.
           </p>
           <Link to="/register" style={{ textDecoration: 'none' }}>
-            <button className="reg-button" style={{ textDecoration: 'none' }}>
-              {' '}
+            <motion.button
+              className="reg-button"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
               Register
-            </button>
+            </motion.button>{' '}
           </Link>
         </div>
       </div>

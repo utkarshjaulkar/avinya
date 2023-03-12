@@ -5,7 +5,7 @@ const Speaker = () => {
   return (
     <section id="speaker">
       <h1>Meet Our Speakers</h1>
-      <div class="container">
+      <div class="container1">
         <div class="box">
           <div class="imgBox">
             <img src="./images/Speaker1.jpg" alt="" />

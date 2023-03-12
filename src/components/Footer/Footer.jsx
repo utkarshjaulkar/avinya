@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <section class="contact-area" id="contact">
-        <div class="container">
+        <div class="container2">
           <div class="row">
             <div class="contact-content text-center">
               <a href="#">

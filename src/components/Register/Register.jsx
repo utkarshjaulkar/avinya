@@ -7,9 +7,9 @@ const Register = () => {
   return (
     <>
       <Navbar />
-      <div className="registration-details">
+      {/* <div className="registration-details">
         <div className="details">
-          <h2> Registration fee for Event:- ₹100/- per group</h2> <br />
+          <h2>Registration fee for Event:- ₹100/- per group</h2> <br />
           <h2>Registraion fee for Guest lecture:- ₹50/- per head</h2>
         </div>
         <div className="register-links">
@@ -20,7 +20,7 @@ const Register = () => {
             </NavLink>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="form-space">
         <div class="form_wrapper">
           <div class="form_container">

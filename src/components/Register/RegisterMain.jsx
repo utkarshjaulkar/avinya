@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import { NavLink } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import './RegisterMain.css'
 
 const RegisterMain = () => {
@@ -19,13 +20,25 @@ const RegisterMain = () => {
               <br /> By Shridhar Mankar (5 minutes Engineering)
             </p>
             <NavLink to="/registerS" style={{ textDecoration: 'none' }}>
-              <button className="s-register">Click here</button>
+              <motion.button
+                className="s-register"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Click here
+              </motion.button>
             </NavLink>
           </div>
           <div className="register-option">
-            <p> To register for Contest</p>
+            <p> To register for Contest (The Code Olympics)</p>
             <NavLink to="/registerE" style={{ textDecoration: 'none' }}>
-              <button className="e-register">Click here</button>
+              <motion.button
+                className="s-register"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Click here
+              </motion.button>
             </NavLink>
           </div>
         </div>

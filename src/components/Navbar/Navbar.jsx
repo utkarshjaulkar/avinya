@@ -12,7 +12,7 @@ class Navbar extends Component {
     return (
       <nav className="NavbarItems">
         <h1 className="logo">
-          <Link to="/">
+          <Link to="/home">
             <img src="./images/logo1.png" alt="" />
           </Link>
         </h1>
@@ -22,7 +22,7 @@ class Navbar extends Component {
           ></i>
         </div>
         <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-          <Link className="nav-links" to="/">
+          <Link className="nav-links" to="/home">
             <li>
               <i className="fa-solid fa-home"></i>
               Home
