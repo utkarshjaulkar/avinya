@@ -17,8 +17,8 @@ const Footer = () => {
                 Rd, Ashok Nagar, Tathawade, Pimpri-Chinchwad, Maharashtra 411033
               </h6>
               <h6>
-                Param Pawar: +91 89560 49304<span>|</span> Pratiksha Patil: +91
-                72188 66759
+                Param Pawar: +91 89560 49304<span>|</span>
+                <br /> Pratiksha Patil: +91 72188 66759
               </h6>
               <div className="footer-social-icon">
                 <span></span>

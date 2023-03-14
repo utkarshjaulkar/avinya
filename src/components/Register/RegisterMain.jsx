@@ -2,16 +2,17 @@ import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import { NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import 'animate.css'
 import './RegisterMain.css'
 
 const RegisterMain = () => {
   return (
     <>
       <Navbar />
-      <div className="registration-details">
+      <div className="registration-details animate__animated animate__bounceIn">
         <div className="details">
           <h2> Registration fee for Contest:- ₹100/- per group</h2> <br />
-          <h2>Registraion fee for Guest lecture:- ₹50/- per head</h2>
+          <h2>Registration fee for Guest lecture:- ₹50/- per head</h2>
         </div>
         <div className="register-links">
           <div className="register-option">

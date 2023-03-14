@@ -38,8 +38,15 @@
   }
   .three-title {
     width: 100%;
+    margin-bottom: 10px;
   }
   .three-main {
     width: 100%;
+    height: 250px;
+    /* zoom: 100%; */
+  }
+  .three-main img {
+    width: 200%;
+    height: 100%;
   }
 }

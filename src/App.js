@@ -5,14 +5,15 @@ import RegisterMain from './components/Register/RegisterMain'
 import SessionRegister from './components/Register/SessionRegister'
 import MainHome from './components/Home/MainHome'
 import Home from './components/Home/Home'
+import Events from './components/Events/Events'
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainHome />}></Route>
-          <Route path="/home" element={<Home />}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/event" element={<Events />}></Route>
           <Route path="/register" element={<RegisterMain />}></Route>
           <Route path="/registerE" element={<Register />}></Route>
           <Route path="/registerS" element={<SessionRegister />}></Route>

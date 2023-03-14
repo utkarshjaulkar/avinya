@@ -78,13 +78,15 @@ const Modal = ({ handleClose, text }) => {
           </li>
           <br />
           <li className="round">
-            Round 3: DesignZillas
+            Round 3: ProtoX
             <ul className="round-rules">
-              <li>Round 2 will be commencing at 3:00 pm.</li>
+              <li>Round 3 will be commencing at 3:00 pm.</li>
               <li>This round will last for 3:00 hours</li>
               <li>
                 In this round participant will have to design a prototype only
-                (No coding)
+                (You have to build the web or android app whose basic design
+                will be given to you. <br /> All the assets will be provided to
+                you.)
               </li>
               <li>
                 Participants can choose the platform according to their
@@ -111,7 +113,7 @@ const Modal = ({ handleClose, text }) => {
           <li className="round">
             Round 4: Code Combat
             <ul className="round-rules">
-              <li>Round 2 will be commencing at 9 am.</li>
+              <li>Round 4 will be commencing at 9 am.</li>
               <li>This round will be conducted on Hackerrank</li>
               <li>Round will last for 2:00 hours (9:am to 11:00am)</li>
               <li>It will consist of 3 questions</li>

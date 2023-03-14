@@ -60,7 +60,12 @@
   }
   .intro-logo {
     width: 100%;
-    height: 600px;
+    height: 300px;
+  }
+
+  .intro-logo img {
+    height: 300px;
+    width: 1150px;
   }
 
   .intro-info {

@@ -2,14 +2,28 @@ import React from 'react'
 import Spline from '@splinetool/react-spline'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 import './Intro.css'
 
 const Intro = () => {
+  const [isMobileView, setIsMobileView] = useState(false)
+
+  // Check the screen size and update the state
+  function handleResize() {
+    setIsMobileView(window.innerWidth <= 768) // Change 768 to your desired breakpoint
+  }
+
+  // Add a resize listener to update the state when the screen size changes
+  window.addEventListener('resize', handleResize)
   return (
     <>
       <div className="intro-main">
         <div className="intro-logo">
-          <Spline scene="https://prod.spline.design/hHdAjRRp1WGxJoBw/scene.splinecode" />
+          {isMobileView ? (
+            <img src="./images/model2.gif" />
+          ) : (
+            <Spline scene="https://prod.spline.design/hHdAjRRp1WGxJoBw/scene.splinecode" />
+          )}
         </div>
         <div className="intro-info">
           <h1>What is Avinya ?</h1>

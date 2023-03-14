@@ -1,26 +1,46 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+// import logo from './logo.svg'
 import './Loader.css'
 
-const Loader = () => {
+function Loader() {
+  const [loadingPercent, setLoadingPercent] = useState(0)
+  const colors = ['#FFC312', '#C4E538', '#12CBC4']
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setLoadingPercent((prevPercent) => prevPercent + 1)
+    }, 100)
+
+    return () => clearInterval(interval)
+  }, [])
+
+  const getSpinnerColor = () => {
+    const index = Math.floor(loadingPercent / 33.33)
+    return colors[index]
+  }
+
   return (
-    <div class="container">
-      <div class="coffee-header">
-        <div class="coffee-header__buttons coffee-header__button-one"></div>
-        <div class="coffee-header__buttons coffee-header__button-two"></div>
-        <div class="coffee-header__display"></div>
-        <div class="coffee-header__details"></div>
+    <div className="spinner-container">
+      <div className="spinner">
+        <div
+          className="spinner-color"
+          style={{ backgroundColor: getSpinnerColor() }}
+        ></div>
+        <div
+          className="spinner-color"
+          style={{ backgroundColor: getSpinnerColor() }}
+        ></div>
+        <div
+          className="spinner-color"
+          style={{ backgroundColor: getSpinnerColor() }}
+        ></div>
       </div>
-      <div class="coffee-medium">
-        <div class="coffe-medium__exit"></div>
-        <div class="coffee-medium__arm"></div>
-        <div class="coffee-medium__liquid"></div>
-        <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
-        <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
-        <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
-        <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
-        <div class="coffee-medium__cup"></div>
-      </div>
-      <div class="coffee-footer"></div>
+      <div
+        className="loading-bar"
+        style={{ width: `${loadingPercent}%` }}
+      ></div>
+      <img src="./images/logo.png" className="logo3" alt="logo" />
+      <p className="loading-percent">{loadingPercent}%</p>
     </div>
   )
 }

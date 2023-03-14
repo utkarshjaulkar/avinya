@@ -31,7 +31,7 @@ const SessionRegister = () => {
               <div class="">
                 <form
                   method="POST"
-                  action="https://script.google.com/macros/s/AKfycbzz5IrJC9TxMVGIOKCY4la8_ZU1EYKA98kuqcnX7UPcBQU6yud7KxSEXZLi7QouFweQ9A/exec"
+                  action="https://script.google.com/macros/s/AKfycbwE60HUYhqQ4xxmK-nh9crGGLj8-UcgzXcVnPzn6BXCGKX3CVqoJCyYLGvIVLgECgkWsw/exec"
                 >
                   <div class="input_field">
                     {' '}
