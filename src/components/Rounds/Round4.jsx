@@ -4,7 +4,7 @@ const Round4 = () => {
   return (
     <>
       <div className="about">
-        <div class="card">
+        <div class="card4">
           <div class="card__inner">
             <div class="card__face card__face--front">
               <img src="./images/stage4.png" />
@@ -21,13 +21,15 @@ const Round4 = () => {
                 </div>
                 <div class="card__body">
                   <p>
-                    <div className="benefits">Round 4:- </div>
+                    <div className="benefits">Round 4:- (24th March)</div>
                     <br />
                     <ol className="round-rules">
-                      <li>Round 4 will be commencing at 9 am.</li>
+                      <li>Round 4 will be commencing at 1 pm.</li>
                       <li>This round will be conducted on Hackerrank</li>
-                      <li>Round will last for 2:00 hours (9:am to 11:00am)</li>
-                      <li>It will consist of 3 questions</li>
+                      <li>
+                        Round will last for 2:00 hours (1:00pm to 03:00am)
+                      </li>
+                      <li>It will consist of 4 questions</li>
                       <li>
                         Time and number of questions solved will be the factor
                         for evaluation{' '}

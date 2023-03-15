@@ -4,7 +4,7 @@ const Round3 = () => {
   return (
     <>
       <div className="about">
-        <div class="card">
+        <div class="card3">
           <div class="card__inner">
             <div class="card__face card__face--front">
               <img src="./images/stage3.png" />
@@ -21,7 +21,7 @@ const Round3 = () => {
                 </div>
                 <div class="card__body">
                   <p>
-                    <div className="benefits">Round 3:- </div>
+                    <div className="benefits">Round 3:- (23rd March)</div>
 
                     <ol className="round-rules">
                       <li>Round 3 will be commencing at 3:00 pm.</li>

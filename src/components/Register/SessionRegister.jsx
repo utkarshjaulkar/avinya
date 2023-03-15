@@ -1,26 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../Navbar/Navbar'
 import { NavLink } from 'react-router-dom'
 import './Register.css'
 
 const SessionRegister = () => {
+  const [submitted, setSubmitted] = useState(false)
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    college: '',
+    phone: '',
+    transactionid: '',
+  })
+
+  const handleSubmit2 = async (event) => {
+    event.preventDefault()
+    setSubmitted(true)
+    const url = event.target.action
+
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        body: new FormData(event.target),
+      })
+      const data = await response.text()
+      console.log(data)
+    } catch (error) {
+      console.error('Error:', error)
+    }
+
+    const form = document.getElementById('sform')
+    form.reset()
+    setSubmitted(false)
+  }
+
+  const handleChange = (event) => {
+    setFormData({ ...formData, [event.target.name]: event.target.value })
+  }
   return (
     <>
       <Navbar />
-      {/* <div className="registration-details">
-        <div className="details">
-          <h2> Registration fee for Event:- ₹100/- per group</h2> <br />
-          <h2>Registraion fee for Guest lecture:- ₹50/- per head</h2>
-        </div>
-        <div className="register-links">
-          <div className="register-option">
-            <p>To register for Contest</p>
-            <NavLink to="/registerE" style={{ textDecoration: 'none' }}>
-              <button className="e-register">Click here</button>
-            </NavLink>
-          </div>
-        </div>
-      </div> */}
+
       <div className="form-space">
         <div class="form_wrapper">
           <div class="form_container">
@@ -31,6 +52,8 @@ const SessionRegister = () => {
               <div class="">
                 <form
                   method="POST"
+                  id="sform"
+                  onSubmit={handleSubmit2}
                   action="https://script.google.com/macros/s/AKfycbwE60HUYhqQ4xxmK-nh9crGGLj8-UcgzXcVnPzn6BXCGKX3CVqoJCyYLGvIVLgECgkWsw/exec"
                 >
                   <div class="input_field">
@@ -42,6 +65,7 @@ const SessionRegister = () => {
                       type="name"
                       name="Name"
                       placeholder="Name"
+                      onChange={handleChange}
                       required
                     />
                   </div>
@@ -55,6 +79,7 @@ const SessionRegister = () => {
                       type="email"
                       name="Email"
                       placeholder="Email"
+                      onChange={handleChange}
                       required
                     />
                   </div>
@@ -67,6 +92,7 @@ const SessionRegister = () => {
                       type="name"
                       name="College"
                       placeholder="College"
+                      onChange={handleChange}
                       required
                     />
                   </div>
@@ -79,6 +105,7 @@ const SessionRegister = () => {
                       type="name"
                       name="Phone"
                       placeholder="Phone"
+                      onChange={handleChange}
                       required
                       pattern="[1-9]{1}[0-9]{9}"
                       maxlength="10"
@@ -92,6 +119,7 @@ const SessionRegister = () => {
                     <input
                       type="name"
                       name="Transaction Id"
+                      onChange={handleChange}
                       placeholder="Transaction Id"
                       required
                     />
@@ -101,7 +129,10 @@ const SessionRegister = () => {
                     <img src="./images/payment.jpg" />
                   </div>
 
-                  <input class="button" type="submit" value="Register" />
+                  {!submitted && (
+                    <input class="button" type="submit" value="Register" />
+                  )}
+                  {submitted && <p>Form Submited Successfully</p>}
                 </form>
               </div>
             </div>

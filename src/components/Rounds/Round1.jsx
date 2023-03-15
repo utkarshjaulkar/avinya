@@ -5,14 +5,14 @@ const Round1 = () => {
   return (
     <>
       <div className="about">
-        <div class="card">
+        <div class="card1">
           <div class="card__inner">
             <div class="card__face card__face--front">
               <img src="./images/stage1.png" />
               <h2>
                 Round 1:
                 <br />
-                <br></br> Trial By Trivia
+                <br></br> Trial By Trivia<br></br>
               </h2>
             </div>
             <div class="card__face card__face--back">
@@ -22,7 +22,7 @@ const Round1 = () => {
                 </div>
                 <div class="card__body">
                   <p>
-                    <div className="benefits">Round 1:- </div>
+                    <div className="benefits">Round 1:- (23rd March)</div>
                     <br />
                     <ol className="round-rules">
                       <li>Round one will start at 9 am. </li>

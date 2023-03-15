@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <section class="contact-area" id="contact">
         <div class="container2">
-          <div class="row">
+          <div class="row1">
             <div class="contact-content text-center">
               <a href="#">
                 <img src="./images/logo1.png" alt="logo" />
