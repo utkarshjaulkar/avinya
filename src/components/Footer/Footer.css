@@ -24,7 +24,16 @@ ul {
   margin: 30px 0 60px;
   position: relative;
 }
-
+.developer {
+  margin-top: 70px;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+.developer a {
+  color: #17c7fc;
+  text-decoration: none;
+}
 .contact-content p::after {
   background: #353c46;
   bottom: -30px;

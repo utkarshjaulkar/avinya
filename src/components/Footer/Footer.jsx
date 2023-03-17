@@ -38,6 +38,18 @@ const Footer = () => {
                   <img src="./images/discord.png" alt="" />
                 </a>
               </div>
+              <div className="developer">
+                <p>
+                  {' '}
+                  Developed with ❤️ By{' '}
+                  <a
+                    href="https://www.linkedin.com/in/utkarsh-jaulkar/"
+                    target="_blank"
+                  >
+                    Utkarsh Jaulkar
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>

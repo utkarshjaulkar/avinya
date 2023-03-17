@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from '../Navbar/Navbar'
+import { motion } from 'framer-motion'
 import { NavLink } from 'react-router-dom'
 import './Register.css'
 
@@ -127,12 +128,26 @@ const SessionRegister = () => {
 
                   <div className="payment">
                     <img src="./images/payment.jpg" />
+                    <h3>GPay/PhonePay:- 8956049304</h3>
                   </div>
 
                   {!submitted && (
-                    <input class="button" type="submit" value="Register" />
+                    <motion.button
+                      className="s-register"
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      type="submit"
+                      class="button"
+                    >
+                      Register
+                    </motion.button>
                   )}
-                  {submitted && <p>Form Submited Successfully</p>}
+                  {submitted && (
+                    <p>
+                      Form Submited Successfully <br /> You'll recieve
+                      Comfirmation mail and Ticket soon.
+                    </p>
+                  )}
                 </form>
               </div>
             </div>
